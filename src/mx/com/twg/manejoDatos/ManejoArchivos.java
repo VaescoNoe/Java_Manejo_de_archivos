@@ -55,4 +55,21 @@ public class ManejoArchivos {
 		}
 		System.out.println("Se anexo la información correctamente");
 	}
+	
+	public static void escribirInformacion(){
+		File archivo = new File("C:\\workspace\\ArchivosGenerados\\archivo.txt");
+		try{
+			PrintWriter salida = new PrintWriter(new FileWriter(archivo));
+			String contenido = "De aquí se escribe información al archivo";
+			salida.println(contenido);
+			salida.println();
+			salida.println("Fin de escribir");
+			salida.close();
+		}catch(FileNotFoundException ex){
+			ex.printStackTrace();
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Se escribio la información correctamente");
+	}
 }

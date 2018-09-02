@@ -7,7 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		//ManejoArchivos.creacionArchivo();
-		ManejoArchivos.lecturaArchivo();
+		//ManejoArchivos.escribirInformacion();
+		//ManejoArchivos.lecturaArchivo();
 		//ManejoArchivos.anexarInformacion();
 	}
 
